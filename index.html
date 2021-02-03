@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript fundamentals 3</title>
+</head>
+
+<body>
+    <h1>Javascript fundamentals 3</h1>
+    <script>
+
+        // 1) Declaration 
+        function add7(num) {
+            return num + 7;
+        }
+
+        // 2) Expression
+        const multiply = function (a, b) {
+            return a * b;
+        }
+
+        // 3) Arrow
+        let capitalize = (text) => {
+            initialCharacter = text.substring(0, 1).toUpperCase();
+            remainingText = text.substring(1).toLowerCase();
+            //console.log(initialCharacter + remainingText);
+            return initialCharacter + remainingText;
+        }
+        console.log(capitalize('lala'));
+        console.log(capitalize('TraLaLa'));
+        console.log(capitalize('LALA'));
+        // 4) Declaration
+        function lastLetter(text) {
+            lastCharacter = text.substring(text.length - 1);
+            //console.log(lastCharacter);  
+            return lastCharacter;
+        }
+        console.log(lastLetter('Woolen'));
+    </script>
+<!--- 
+
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:nickaiva/JavascriptFundamentals3.git
+git push -u origin main
+
+git remote add origin git@github.com:nickaiva/JavascriptFundamentals3.git
+git branch -M main
+git push -u origin main
+
+
+
+-->
+</body>
+
+</html>
